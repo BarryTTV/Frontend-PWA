@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar película</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#e50914" />
+
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/global.css" />
+    <link rel="stylesheet" href="css/add-movie.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">PELIS+</a>
+    </header>
+
+    <main class="add">
+      <h1 class="add__title" id="formTitle">Agregar nueva película</h1>
+
+      <form class="add__form" id="addMovieForm">
+        <!-- TÍTULO -->
+        <div class="add__group">
+          <label class="add__label">Título</label>
+          <input class="add__input" type="text" id="title" required />
+        </div>
+
+        <!-- PLATAFORMA -->
+        <div class="add__group">
+          <label class="add__label">Plataforma</label>
+          <input
+            class="add__input"
+            type="text"
+            id="platform"
+            placeholder="Netflix, Prime, HBO..."
+            required
+          />
+        </div>
+
+        <!-- CALIFICACIÓN -->
+        <div class="add__group">
+          <label class="add__label">Calificación (1 a 5)</label>
+          <input
+            class="add__input"
+            type="number"
+            id="rating"
+            min="1"
+            max="5"
+            required
+          />
+        </div>
+
+        <!-- IMAGEN POR URL -->
+        <div class="add__group">
+          <label class="add__label">Imagen por URL (opcional)</label>
+          <input
+            class="add__input"
+            type="text"
+            id="posterUrl"
+            placeholder="https://..."
+          />
+        </div>
+
+        <!-- IMAGEN DESDE DISPOSITIVO -->
+        <div class="add__group">
+          <label class="add__label">O subir imagen desde el dispositivo</label>
+          <input
+            class="add__input"
+            type="file"
+            id="posterFile"
+            accept="image/*"
+          />
+        </div>
+
+        <!-- PREVIEW -->
+        <div class="add__preview">
+          <img id="imagePreview" />
+        </div>
+
+        <!-- SINOPSIS -->
+        <div class="add__group">
+          <label class="add__label">Sinopsis</label>
+          <textarea class="add__textarea" id="synopsis" required></textarea>
+        </div>
+
+        <button type="submit" class="add__btn">Guardar película</button>
+      </form>
+    </main>
+
+    <script src="js/add-movie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+.playlist {
+  padding: 40px;
+}
+
+.playlist__title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.playlist__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.playlist__card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform .3s;
+}
+
+.playlist__card:hover {
+  transform: translateY(-8px);
+}
+
+.playlist__poster {
+  height: 300px;
+  object-fit: cover;
+}
+
+.playlist__info {
+  padding: 15px;
+}
+
+.playlist__movie-title {
+  margin-bottom: 10px;
+}
+
+.playlist__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.playlist__btn {
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background-color: #2a2a2a;
+  font-size: 0.85rem;
+}
+
+.playlist__btn--delete:hover {
+  background-color: crimson;
+}
+
+.playlist__btn--view:hover {
+  background-color: var(--color-primary);
+}
+
+.playlist__empty {
+  margin-top: 40px;
+  color: var(--color-muted);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .playlist {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .playlist__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

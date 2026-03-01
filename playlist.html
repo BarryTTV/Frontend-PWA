@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#e50914" />
+
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/global.css" />
+    <link rel="stylesheet" href="css/playlist.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">PELIS+</a>
+    </header>
+
+    <main class="playlist">
+      <h1 class="playlist__title">Mi Playlist</h1>
+
+      <section class="playlist__grid" id="playlistGrid">
+        <!-- Cards dinámicas -->
+      </section>
+
+      <p class="playlist__empty" id="emptyMessage">Tu playlist está vacía 🎬</p>
+    </main>
+
+    <script src="js/playlist.js"></script>
+  </body>
+</html>

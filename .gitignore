@@ -1,0 +1,25 @@
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Si luego agregas bundlers
+dist/
+build/
+
+# Netlify
+.netlify/
+
+# Ejecutables
+*.exe
+
+# Carpeta icons si no necesitas el exe
+icons/*.exe

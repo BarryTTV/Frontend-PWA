@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de película</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#e50914" />
+
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/global.css" />
+    <link rel="stylesheet" href="css/movie.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">PELIS+</a>
+    </header>
+
+    <main class="movie">
+      <section class="movie__poster">
+        <img id="moviePoster" alt="Poster película" />
+      </section>
+
+      <section class="movie__info">
+        <h1 id="movieTitle" class="movie__title"></h1>
+
+        <div id="movieRating" class="movie__rating"></div>
+        <div id="moviePlatform" class="movie__platform"></div>
+
+        <p id="movieSynopsis" class="movie__synopsis"></p>
+
+        <div class="movie__actions">
+          <button id="likeBtn" class="movie__btn movie__btn--like">
+            👍 Like
+          </button>
+          <button id="dislikeBtn" class="movie__btn movie__btn--dislike">
+            👎 No like
+          </button>
+          <button id="addToPlaylist" class="movie__playlist-btn">
+            ➕ Agregar a playlist
+          </button>
+          <button id="editMovieBtn" class="movie__btn movie__btn--edit">
+            ✏️ Editar
+          </button>
+          <button id="deleteMovieBtn" class="movie__btn movie__btn--delete">
+            🗑 Eliminar película
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="comments">
+      <h2 class="comments__title">Comentarios</h2>
+
+      <div class="comments__list" id="commentsList"></div>
+
+      <form class="comments__form" id="commentForm">
+        <input
+          type="text"
+          id="commentInput"
+          placeholder="Escribe un comentario"
+          required
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/movie.js"></script>
+  </body>
+</html>
