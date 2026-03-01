@@ -4,7 +4,7 @@ let elements;
 let clientSecret;
 
 async function initPayment() {
-    const res = await fetch("https://backend-pwa-k9hq.onrender.com", {
+    const res = await fetch("https://backend-pwa-k9hq.onrender.com/create-payment-intent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount: 500 }),
