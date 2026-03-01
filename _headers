@@ -1,2 +1,5 @@
-/*
-Content-Security-Policy: default-src 'self'; script-src 'self' https://js.stripe.com https://m.stripe.network blob: 'unsafe-inline'; frame-src https://js.stripe.com https://hooks.stripe.com; connect-src 'self' https://backend-pwa-k9hq.onrender.com https://api.stripe.com; img-src 'self' data:; style-src 'self' 'unsafe-inline';
+/* Content-Security-Policy: default-src 'self'; script-src 'self'
+https://js.stripe.com https://m.stripe.network blob: 'unsafe-inline'; frame-src
+https://js.stripe.com https://hooks.stripe.com; connect-src 'self'
+https://backend-pwa-k9hq.onrender.com https://api.stripe.com; img-src 'self'
+data:; style-src 'self' 'unsafe-inline';
